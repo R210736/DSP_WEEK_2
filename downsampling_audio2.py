@@ -53,23 +53,3 @@ plt.show()
 
 # Save downsampled audio file
 wavfile.write('downsampled_audio.wav', fs_downsampled, audio_downsampled)
-
-'''
-This code:
-
-1. Loads an audio file using wavfile.read.
-2. Defines a downsampling factor.
-3. Downsamples the audio signal using array slicing (audio[::downsampling_factor]).
-4. Plots the original and downsampled audio signals using Matplotlib.
-5. Plots the frequency spectra of the original and downsampled audio signals using np.fft.fft.
-6. Saves the downsampled audio file using wavfile.write.
-
-Note:
-
-- The downsampling process reduces the sampling rate of the audio signal.
-- The wavfile module from SciPy is used for reading and writing WAV files.
-- The np.fft module is used for computing the Fast Fourier Transform (FFT).
-
-Replace 'audio_file.wav' with the path to your audio file.
-
-Make sure to install required libraries using pip install numpy matplotlib scipy.'''
